@@ -200,7 +200,7 @@
     <div class="container">
         <div class="card">
             <div class="card-header">
-                <h2>Tabla de Datos</h2>
+                <h2>Visación de Interconsultas</h2>
                 <div class="search-container">
                     <input type="text" id="search-input" placeholder="Buscar...">
                     <button id="search-btn">Buscar</button>
@@ -258,7 +258,7 @@
             
             let allData = [];
             let currentPage = 1;
-            const rowsPerPage = 10;
+            const rowsPerPage = 25;
             
             // Función para cargar los datos desde Google Sheets
             function loadData() {
@@ -272,7 +272,7 @@
                         // Encontrar los índices de las columnas que necesitamos (C, D, E, F, G, H, J, L)
                         // Nota: Las columnas en CSV son 0-indexed, por lo que:
                         // C=2, D=3, E=4, F=5, G=6, H=7, J=9, L=11
-                        const neededColumns = [1,2, 3, 4, 5, 6, 7,8, 9,10, 11];
+                        const neededColumns = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
                         
                         allData = [];
                         for (let i = 1; i < rows.length; i++) {
