@@ -216,6 +216,7 @@
                             <th>Apellido paterno </th>
                             <th>Apellido materno</th>
                             <th>Nombres</th>
+                            <th>Estado</th>
                             <th>Especialidad</th>
                             <th>Fecha entrada</th>
                             <th>Estado</th>
@@ -272,7 +273,7 @@
                         // Encontrar los índices de las columnas que necesitamos (C, D, E, F, G, H, J, L)
                         // Nota: Las columnas en CSV son 0-indexed, por lo que:
                         // C=2, D=3, E=4, F=5, G=6, H=7, J=9, L=11
-                        const neededColumns = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+                        const neededColumns = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
                         
                         allData = [];
                         for (let i = 1; i < rows.length; i++) {
